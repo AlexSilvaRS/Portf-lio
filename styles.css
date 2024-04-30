@@ -1,0 +1,119 @@
+body,html {
+  margin: 0;
+}
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  /* Estilo da barra lateral */
+  aside {
+    background-color: #7d7b7b;
+    width: 190px;
+    position: fixed;
+    top: 121px;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  /* Estilo do conteúdo principal */
+  main {
+    margin-top: 100px; /* para compensar o cabeçalho fixo */
+    margin-left: 220px; /* para compensar a barra lateral fixa */
+    padding: 30px;
+    background-color: black;
+    color: white;
+    margin-bottom: 90px;
+  }
+  
+  /* Estilo dos botões de projeto */
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  /* Estilo dos detalhes do projeto */
+  #conteudo-exibido {
+    margin-top: 20px;
+  }
+  
+  /* Estilo das informações pessoais */
+  #informacoes-pessoais {
+    margin-top: 20px;
+    
+  }
+
+  .informacoes-pessoais img {
+    
+    width: 150px;
+    border-radius: 10%;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.informacoes-pessoais {
+  display: flex;
+  padding: 40px;
+}
+
+.informacoes-pessoais > div {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .informacoes-pessoais {
+    flex-direction: column;
+    align-items: center;
+  }
+  .informacoes-pessoais > div {
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 25px;
+    }
+}
+  
+  
+  /* Estilo do portfólio */
+  #portfolio {
+    margin-top: 20px;
+  }
+  
+  /* Estilo do sobre mim */
+  #sobre-mim {
+    margin-top: 20px;
+    text-align: right;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+img {
+  width: 720px;
+}
+  
